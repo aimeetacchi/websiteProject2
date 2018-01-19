@@ -1,0 +1,77 @@
+<footer>
+	<div class="footerContent">
+		<div class="row">
+			<div class="col-4">
+				<img src="/images/logo-dark.png" class="footerLogo">
+			</div>
+			<div class="col-4 padding-top-lg padding-bottom-lg">
+				<h3><i class="fa fa-clock-o" aria-hidden="true"></i> Opening Hours</h3>
+				<p> Monday - Thrusday: 5.00pm - 11.00pm<br/>
+					Friday - Saturday: 5.00pm - 12.00am<br/>
+					Sunday: 5.30pm - 10.00pm</p>
+			</div>
+			<div class="col-4 padding-top-lg padding-bottom-lg">
+				<h3><i class="fa fa-map-marker" aria-hidden="true"></i> Contact Us</h3>
+				<p>Address1<br/>
+				Address2<br/>
+				Town<br/>
+				County<br/>
+				Postcode</p>
+
+				<p><i class="fa fa-phone" aria-hidden="true"></i>Phone: 01582 123123</p>
+				<p>
+					<a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+					<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					<a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+				</p>
+			</div>
+		</div>
+		<div class="copyright"> 
+			<p>Web site designed and developed by Aimee Tacchi &copy; 2018 All rights reserved</p>
+		</div>
+	</div>
+	<!-- === ADDRESS DETAILS === -->
+   
+</footer>
+</div> <!-- end of container -->
+	<!-- jQuery -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+   
+    <script>
+    	 //Scroll smooth on a tag links.
+		 // $('.scrolltoRW').click(function(e) {
+			//    e.preventDefault;
+   //            var aTag = $(this).attr('href');
+   //            $('html,body').animate({
+   //                scrollTop: $(aTag).offset().top
+   //            }, 600);
+   //            return false;
+   //        });
+
+		 // Burger Menu
+		 $('.burgerContainer').on('click', function(){
+		 	$('nav').toggleClass('navShow');
+   			$('.burgerContainer .bars:nth-child(2)').toggleClass('animate');
+			$('.burgerContainer .bars:nth-child(1)').toggleClass('transformBurgerBarone');
+			$('.burgerContainer .bars:nth-child(3)').toggleClass('transformBurgerBarthree');
+
+		});
+
+
+		 let nav = $('#nav');
+		 let headerHeight = $('header').height();
+		 console.log(headerHeight);
+
+		 $(window).scroll(function() {
+			  if( $(this).scrollTop() > headerHeight ) {
+			    nav.addClass('main-nav-scrolled');
+			  } else {
+			    nav.removeClass('main-nav-scrolled');
+			  }
+			});
+	</script>
+    
+	
+</body>
+</html>
