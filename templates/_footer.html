@@ -59,15 +59,18 @@
 		});
 
 
-		 let nav = $('#nav');
+		 let nav = $('.nav');
+		 let sectionOne = $('.sectionone');
 		 let headerHeight = $('header').height();
 		 console.log(headerHeight);
 
 		 $(window).scroll(function() {
 			  if( $(this).scrollTop() > headerHeight ) {
 			    nav.addClass('main-nav-scrolled');
+			    sectionOne.addClass('sectionOneMargin');
 			  } else {
 			    nav.removeClass('main-nav-scrolled');
+			    sectionOne.removeClass('sectionOneMargin');
 			  }
 			});
 	</script>

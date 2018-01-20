@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Project1 | Website Project2</title>
+<title>Pizza | Website Project2</title>
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-<meta name="description" content="Project1 website">
-<meta name="keywords" content="Web desgin, front-end developer, bedfordshire, hertfordshire, buckinghamshire">
+<meta name="description" content="Pizza website">
+<meta name="keywords" content="pizza takeaway">
 
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -28,7 +28,7 @@
 		<img src="/images/logo.png" alt="logo">
 	</div>
 </header>
-<nav id="nav">
+<nav class="nav">
 	<ul>
 		<li><a href="#">Home</a></li>
 		<li><a href="#">Menu</a></li>
@@ -221,15 +221,18 @@
 		});
 
 
-		 let nav = $('#nav');
+		 let nav = $('.nav');
+		 let sectionOne = $('.sectionone');
 		 let headerHeight = $('header').height();
 		 console.log(headerHeight);
 
 		 $(window).scroll(function() {
 			  if( $(this).scrollTop() > headerHeight ) {
 			    nav.addClass('main-nav-scrolled');
+			    sectionOne.addClass('sectionOneMargin');
 			  } else {
 			    nav.removeClass('main-nav-scrolled');
+			    sectionOne.removeClass('sectionOneMargin');
 			  }
 			});
 	</script>

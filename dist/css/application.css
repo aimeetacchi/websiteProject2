@@ -278,7 +278,21 @@ nav {
   background-color: #efefef; }
   @media screen and (min-width: 720px) {
     .sectionone {
-      padding: 2em 0; } }
+      padding: 2em 0;
+      position: relative;
+      z-index: -1; } }
+
+@media screen and (min-width: 720px) {
+  .sectionOneMargin {
+    margin-top: 10vw; } }
+
+@media screen and (min-width: 1024px) {
+  .sectionOneMargin {
+    margin-top: 7vw; } }
+
+@media screen and (min-width: 1400px) {
+  .sectionOneMargin {
+    margin-top: 5vw; } }
 
 @media screen and (min-width: 720px) {
   .sectiontwo {
@@ -383,11 +397,10 @@ nav {
   width: 80%;
   color: #2A363B;
   margin: 0 auto;
-  padding: 80px 0 10 0px; }
+  padding: 90px 0px; }
   @media screen and (min-width: 720px) {
     .offersContent {
-      width: 40%;
-      padding: 40px 0 120px; } }
+      width: 40%; } }
   .offersContent .divider {
     background-color: #000; }
 

@@ -199,7 +199,26 @@ nav {
 	
 	@media screen and (min-width: $breakpoint-tablet) {
 		padding: 2em 0;
+		position: relative;
+		z-index: -1;
 	}
+}
+
+.sectionOneMargin {
+
+	@media screen and (min-width: $breakpoint-tablet) {
+		margin-top: 10vw;
+	}
+
+	@media screen and (min-width: $breakpoint-desktop) {
+		margin-top: 7vw;
+	}
+
+	@media screen and (min-width: $breakpoint-desktop-lg) {
+		margin-top: 5vw;
+	}
+
+
 }
 .sectiontwo {
 	
@@ -328,11 +347,11 @@ nav {
 	width: 80%;
 	color: $dark;
 	margin: 0 auto;
-	padding: 80px 0 10
-	0px;
+	padding: 90px 0px;
+
 	@media screen and (min-width: $breakpoint-tablet) {
 		width: 40%;
-		padding: 40px 0 120px;
+		//padding: 40px 0 120px;
 	}
 	.divider {
 		background-color: #000;
