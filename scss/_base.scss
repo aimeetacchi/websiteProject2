@@ -46,7 +46,7 @@ h3 {
 	font-family: $primaryFont;
 	color: #000;
 	font-weight: 700;
-	font-size: 1.8em;
+	font-size: 1.6em;
 	margin: 0;
 }
 
@@ -88,7 +88,6 @@ h3 {
 // ====== CENTER ALIGN
 
 .center {
-
 	text-align: center;
 }
 
@@ -97,6 +96,7 @@ h3 {
 
 .row {
 	display: block;
+	
 	@media screen and (min-width: $breakpoint-tablet) {
 	width: 100%;
 	display: flex;
@@ -138,6 +138,21 @@ h3 {
 
 		@media screen and (min-width: $breakpoint-desktop) {
 				width: 25%;
+		}
+}
+
+//Two Thirds
+.col-9 {
+	width: 100%;
+	
+	/* ==== DESKTOP CODE  860px ===== */
+
+		@media screen and (min-width: $breakpoint-tablet) {
+				width: 50%;
+		}
+
+		@media screen and (min-width: $breakpoint-desktop) {
+				width: 75%;
 		}
 }
 

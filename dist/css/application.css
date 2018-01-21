@@ -41,7 +41,7 @@ h3 {
   font-family: "Roboto", sans-serif;
   color: #000;
   font-weight: 700;
-  font-size: 1.8em;
+  font-size: 1.6em;
   margin: 0; }
 
 .margin-top-sm {
@@ -104,6 +104,16 @@ h3 {
     .col-3 {
       width: 25%; } }
 
+.col-9 {
+  width: 100%;
+  /* ==== DESKTOP CODE  860px ===== */ }
+  @media screen and (min-width: 720px) {
+    .col-9 {
+      width: 50%; } }
+  @media screen and (min-width: 1024px) {
+    .col-9 {
+      width: 75%; } }
+
 button {
   border: none;
   padding: 0;
@@ -134,6 +144,50 @@ footer {
   @media screen and (min-width: 720px) {
     footer {
       text-align: left; } }
+
+.contactDetails {
+  padding: 1em;
+  text-align: center; }
+  @media screen and (min-width: 720px) {
+    .contactDetails {
+      padding: 0 3em 0 0;
+      text-align: left; } }
+
+.contactForm {
+  width: 100%; }
+  .contactForm label {
+    display: block;
+    padding: 1em 0; }
+  .contactForm .form-group {
+    width: 100%;
+    margin: 0 auto; }
+  .contactForm input[type=text],
+  .contactForm input[type=email] {
+    width: 100%;
+    padding: 1em; }
+  .contactForm textarea {
+    width: 100%;
+    min-height: 300px; }
+  .contactForm input[type=submit] {
+    display: block;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    transition: all .2s ease-in;
+    padding: 1.5em;
+    background-color: #E84A5F;
+    color: #EEEEEE; }
+    .contactForm input[type=submit]:hover {
+      background-color: #b5172c;
+      color: white; }
+
+.contactPg-details {
+  display: none; }
+  @media screen and (min-width: 720px) {
+    .contactPg-details {
+      display: block; } }
 
 /*PAGES*/
 /* ==== MOBILE FIRST ===== */
