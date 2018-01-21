@@ -39,17 +39,7 @@
 
    
     <script>
-    	 //Scroll smooth on a tag links.
-		 // $('.scrolltoRW').click(function(e) {
-			//    e.preventDefault;
-   //            var aTag = $(this).attr('href');
-   //            $('html,body').animate({
-   //                scrollTop: $(aTag).offset().top
-   //            }, 600);
-   //            return false;
-   //        });
-
-		 // Burger Menu
+		// Burger Menu
 		 $('.burgerContainer').on('click', function(){
 		 	$('nav').toggleClass('navShow');
    			$('.burgerContainer .bars:nth-child(2)').toggleClass('animate');
@@ -58,11 +48,10 @@
 
 		});
 
-
+		 //Fixed Nav on scroll.
 		 let nav = $('.nav');
 		 let sectionOne = $('.sectionone');
 		 let headerHeight = $('header').height();
-		 console.log(headerHeight);
 
 		 $(window).scroll(function() {
 			  if( $(this).scrollTop() > headerHeight ) {
